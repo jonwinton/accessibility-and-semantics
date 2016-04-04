@@ -33,6 +33,10 @@ So the issue is that anytime you use one of these elements you generate a new do
 
 Each sectioning root is broken into a series of content sections. These sections are created by placing sectioning content element tags around discrete pieces of content. Sectioning content elements __are nestable__ and __semantic__. The type that should be used depends on the nature of the content it will contain.
 
+The key here is that sectioning elements are __semantic__. These sections will provide their own heading contexts/scopes, but the key here is that we can inform the user about the type of content they will be interacting with because a screen reader will actually read out what type of element the user is interacting with.
+
+While the Sectioning Elements have their own scope they should be pieces that comprise Sectioning Roots and provide semantic clues to the user about the content.
+
 Sectioning content tags include:
 
 - [`<section>`](http://html5doctor.com/the-section-element/)
@@ -106,9 +110,3 @@ New crawlers and SEO algorithms take into account HTML5 sectioning elements and 
 - [HTML5 Doctor: Article](http://html5doctor.com/the-article-element/)
 - [HTML5 Doctor: Nav](http://html5doctor.com/nav-element/)
 - [HTML5 Doctor: Aside](http://html5doctor.com/aside-revisited/)
-
-
-
-* Give sectioning content and root more meat
-* Why is this a big deal
-* Root can go into content
